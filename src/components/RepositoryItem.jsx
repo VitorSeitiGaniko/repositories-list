@@ -1,10 +1,12 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React from "react";
 
-function RepositoryItem({ repoName }) {
+function RepositoryItem({ repo }) {
   return (
     <li>
-      <h2>{repoName}</h2>
-      <a href="">Acessar repositório</a>
+      <h2>{repo.name}</h2>
+      <a href={repo.html_url}>Acessar repositório</a>
     </li>
   );
 }
