@@ -1,12 +1,13 @@
 import {  } from 'react'
+import RepositoryList from "./components/RepositoryList";
 
 function App() {
 
   return (
     <>
-      <h1>Vite + React</h1>
+      <RepositoryList />
     </>
-  )
+  );
 }
 
 export default App
