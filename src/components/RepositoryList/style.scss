@@ -1,0 +1,22 @@
+.list {
+    margin-left: 24px;
+
+    h1 {
+        font-family: 'Noto Sans';
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 28px;
+        color: #656d76;
+        margin-top: 8px;
+    }
+
+
+    &-repo {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+
+        margin-top: 16px;
+    }
+}

@@ -1,6 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
-import "../styles/global.scss";
-import RepositoryItem from "./RepositoryItem";
+import RepositoryItem from "../RepositoryItem/RepositoryItem";
+import "./style.scss";
 
 function RepositoryList() {
   const [arrayRepo, setArrayRepo] = useState([]);
@@ -12,9 +13,9 @@ function RepositoryList() {
   }, []);
 
   return (
-    <div>
-      <h1>Meus Repositórios do GitHub</h1>
-      <ul>
+    <div className="list">
+      <h1>Repositórios do GitHub</h1>
+      <ul className="list-repo">
         {arrayRepo.map((repo) => (
           <RepositoryItem repo={repo} key={repo.name} />
         ))}

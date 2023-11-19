@@ -1,0 +1,46 @@
+.item {
+    width: 420px;
+    min-height: 74px;
+    border: 1px solid #DCDCDC;
+    border-radius: 5px;
+    padding: 16px;
+
+    &-title {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 12px;
+
+        h2 {
+            font-family: 'Noto Sans';
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+            color: #0969DA;
+        }
+
+        .visibility {
+            font-family: 'Noto Sans';
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            color: #656d76;
+
+            border: 1px solid #DCDCDC;
+            border-radius: 16px;
+            padding: 0px 6px;
+        }
+    }
+
+    .language {
+        font-family: 'Noto Sans';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #656d76;
+    }
+}
+
+a {
+    text-decoration: none;
+}
