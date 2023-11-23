@@ -19,7 +19,42 @@ function RepositoryItem({ repo }) {
             {repo.visibility === "public" ? "Público" : "Privado"}
           </span>
         </div>
-        <div>
+        <div className="language-container">
+          {repo.language === "HTML" && (
+            <span
+              className="iconLanguage"
+              style={{ background: "#e34c26" }}
+            ></span>
+          )}
+
+          {repo.language === "JavaScript" && (
+            <span
+              className="iconLanguage"
+              style={{ background: "#f1e05a" }}
+            ></span>
+          )}
+
+          {repo.language === "TypeScript" && (
+            <span
+              className="iconLanguage"
+              style={{ background: "#3178c6" }}
+            ></span>
+          )}
+
+          {repo.language === "PHP" && (
+            <span
+              className="iconLanguage"
+              style={{ background: "#4F5D95" }}
+            ></span>
+          )}
+
+          {repo.language === "css" && (
+            <span
+              className="iconLanguage"
+              style={{ background: "#563d7c" }}
+            ></span>
+          )}
+
           <span className="language">{repo.language}</span>
         </div>
       </li>

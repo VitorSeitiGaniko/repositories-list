@@ -1,9 +1,25 @@
 .author {
     width: 296px;
 
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
     .image {
         img {
             max-width: 100%;
+            border: 3px solid #DCDCDC;
+            border-radius: 50%;
+        }
+    }
+
+    .imageMobile{
+        display: flex;
+        align-items: center;
+        
+        img {
+            width: 72px;
+            height: 72px;
             border: 3px solid #DCDCDC;
             border-radius: 50%;
         }
@@ -17,6 +33,11 @@
         line-height: 24px;
         color: #656d76;
         margin-top: 16px !important;
+
+        @media (max-width: 768px) {
+            margin-top: 0 !important;
+            margin-left: 16px;
+        }
     }
 
     p {
@@ -41,5 +62,6 @@
         border: 1px solid #DCDCDC;
         border-radius: 5px;
         margin-top: 16px;
+        cursor: pointer;
     }
 }
